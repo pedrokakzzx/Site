@@ -1,0 +1,164 @@
+/* Reset de estilos básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #222; /* Fundo do cabeçalho mais escuro */
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    color: #e67e22;
+}
+
+/* Estilo para os thumbnails */
+.thumbnails {
+    background-color: #444; /* Fundo dos thumbnails */
+    padding: 20px 0;
+}
+
+.thumbnails .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Thumbnails de 100x100px */
+    gap: 20px; /* Espaço entre os thumbnails */
+    justify-items: center; /* Centraliza os thumbnails horizontalmente */
+}
+
+.thumbnail {
+    width: 200px; /* Largura do thumbnail */
+    height: 200px; /* Altura do thumbnail */
+    overflow: hidden;
+    position: relative;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.1);
+}
+
+.thumbnail p {
+    font-size: 0.9rem; /* Tamanho da fonte para o título */
+    margin-top: 5px; /* Espaçamento superior para separar do thumbnail */
+    text-align: center; /* Centraliza o texto */
+}
+
+.thumbnail2 {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    top: 43%; 
+    left: 120%; 
+    transform: translate(-50%, -50%); 
+}
+
+.thumbnail2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: trasform 0.2s ease;
+}
+
+.thumbnail2 img:hover {
+    transform: scale(1.1);
+}
+
+#name {
+    font-size: smaller;
+    top: 50%; 
+    left: 200%; 
+    transform: translate(65%, -5%);
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #222; /* Fundo do rodapé mais escuro */
+    color: #fff;
+    padding: 10px 0;
+    text-align: end;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilo para a página de vídeo */
+.video-container {
+    background-color: #333; /* Fundo escuro para a página de vídeo */
+    padding: 20px 0;
+}
+
+.video-wrapper {
+    max-width: 200px; /* Largura máxima do vídeo */
+    margin: 0 auto;
+}
+
+.video-player {
+    width: 100%; /* Vídeo ocupando 100% da largura do wrapper */
+    height: 200px; /* Altura do vídeo */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    outline: none; /* Remove a borda do vídeo quando focado */
+}
+
+p {
+    font-size: smaller;
+    white-space: nowrap;
+    color: #fff;
+    text-align: center;
+}
+
